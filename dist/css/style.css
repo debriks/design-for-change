@@ -159,11 +159,11 @@ body {
   }
 }
 .features__feature--img {
-  transition: transform ease-in-out 0.3s;
+  transition: transform ease-in-out 0.5s;
   cursor: pointer;
 }
 .features__feature--img:hover {
-  transform: scaleX(-1);
+  transform: rotateY(180deg);
 }
 @media (min-width: 64rem) {
   .features__feature--img .scale-up {

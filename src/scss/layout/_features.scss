@@ -22,12 +22,12 @@
     }
 
     &--img {
-      transition: transform ease-in-out 0.3s;
+      transition: transform ease-in-out 0.5s;
       cursor: pointer;
 
       &:hover {
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
+        -webkit-transform: rotateY(180deg);
+        transform: rotateY(180deg);
       }
 
       .scale-up {
