@@ -1,0 +1,13 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+@use "../utils/functions" as *;
+
+body {
+  display: grid;
+  justify-items: center;
+  font-family: $primary-font;
+}
+
+.container {
+  max-width: 1300px;
+}

@@ -1,0 +1,13 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+@use "../utils/functions" as *;
+
+.footer {
+  margin-top: 80px;
+
+  @include breakpoint(small) {
+    &__br {
+      display: none;
+    }
+  }
+}

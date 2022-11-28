@@ -1,0 +1,52 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+@use "../utils/functions" as *;
+
+.features {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @include breakpoint(small) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+  }
+
+  &__feature {
+    padding: 30px 20px;
+
+    @include breakpoint(small) {
+      grid-column: 1/3;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+
+    &--img {
+      transition: transform ease-in-out 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+      }
+    }
+
+    &--txt {
+      h1,
+      h2 {
+        font-weight: 400;
+        padding-top: 20px;
+      }
+
+      h1 {
+        font-size: clamp(24px, 3vw, 40px);
+      }
+
+      p {
+        font-size: clamp(18px, 2vw, 30px);
+        font-family: $secondary-font;
+        line-height: 1.2;
+      }
+    }
+  }
+}

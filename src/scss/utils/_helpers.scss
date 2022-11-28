@@ -1,0 +1,63 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+@use "../utils/functions" as *;
+
+// FLEXBOX
+
+.flex {
+  display: flex;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.ai-c {
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.col {
+  flex-flow: column nowrap;
+}
+
+.gap-15 {
+  gap: 15px;
+}
+
+.reverse {
+  order: +1;
+}
+
+.bt-1 {
+  border-top: 0.1rem black solid;
+}
+
+.bt-bb {
+  border-top: 0.1rem black solid;
+  border-bottom: 0.1rem black solid;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-secondary {
+  font-family: $secondary-font;
+}
+
+.p-inline {
+  padding: clamp(15px, 3vw, 40px);
+}
+
+.img-primary {
+  margin: 0 auto;
+  width: clamp(250px, 30vw, 300px);
+}
+
+.clr-blue {
+  color: $clr-blue;
+}
