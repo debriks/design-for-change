@@ -20,6 +20,10 @@
   display: grid;
 }
 
+.grid-l-sm {
+  grid-template-columns: 70% 30%;
+}
+
 .col {
   flex-flow: column nowrap;
 }
@@ -60,4 +64,8 @@
 
 .clr-blue {
   color: $clr-blue;
+}
+
+.scale-up {
+  transform: scale(1.5);
 }

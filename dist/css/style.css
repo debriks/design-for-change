@@ -177,7 +177,7 @@ body {
   font-size: clamp(24px, 3vw, 40px);
 }
 .features__feature--txt p {
-  font-size: clamp(18px, 2vw, 30px);
+  font-size: clamp(18px, 1.9vw, 28px);
   font-family: "Helvetica", sans-serif;
   line-height: 1.2;
 }
@@ -205,6 +205,10 @@ body {
 
 .grid {
   display: grid;
+}
+
+.grid-l-sm {
+  grid-template-columns: 70% 30%;
 }
 
 .col {
@@ -247,4 +251,8 @@ body {
 
 .clr-blue {
   color: hsl(231deg, 100%, 50%);
+}
+
+.scale-up {
+  transform: scale(1.5);
 }
