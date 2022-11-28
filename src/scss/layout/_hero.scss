@@ -10,7 +10,7 @@
     font-size: clamp(24px, 3.5vw, 42px);
     transform: translateY(-50px);
 
-    @include breakpoint(medium) {
+    @include breakpoint(small) {
       transform: translateY(-100px);
     }
 

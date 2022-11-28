@@ -95,9 +95,6 @@ body {
   max-width: 1300px;
 }
 
-.header {
-  width: 100%;
-}
 .header__logo {
   width: clamp(100px, 7vw, 150px);
 }
@@ -121,7 +118,7 @@ body {
   font-size: clamp(24px, 3.5vw, 42px);
   transform: translateY(-50px);
 }
-@media (min-width: 64rem) {
+@media (min-width: 40rem) {
   .hero__intro {
     transform: translateY(-100px);
   }

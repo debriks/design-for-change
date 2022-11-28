@@ -3,8 +3,6 @@
 @use "../utils/functions" as *;
 
 .header {
-  width: 100%;
-
   &__logo {
     width: clamp(100px, 7vw, 150px);
   }
