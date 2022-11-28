@@ -29,6 +29,12 @@
         -webkit-transform: scaleX(-1);
         transform: scaleX(-1);
       }
+
+      .scale-up {
+        @include breakpoint(medium) {
+          transform: scale(1.4);
+        }
+      }
     }
 
     &--txt {

@@ -165,6 +165,11 @@ body {
 .features__feature--img:hover {
   transform: scaleX(-1);
 }
+@media (min-width: 64rem) {
+  .features__feature--img .scale-up {
+    transform: scale(1.4);
+  }
+}
 .features__feature--txt h1,
 .features__feature--txt h2 {
   font-weight: 400;
@@ -248,8 +253,4 @@ body {
 
 .clr-blue {
   color: hsl(231deg, 100%, 50%);
-}
-
-.scale-up {
-  transform: scale(1.5);
 }
