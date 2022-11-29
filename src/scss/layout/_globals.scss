@@ -4,10 +4,10 @@
 
 body {
   display: grid;
-  justify-items: center;
-  font-family: $primary-font;
+  justify-content: center;
+  font-family: $ff-primary-font;
 }
 
 .container {
-  max-width: 1300px;
+  max-width: 1250px;
 }

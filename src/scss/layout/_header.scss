@@ -3,6 +3,31 @@
 @use "../utils/functions" as *;
 
 .header {
+  width: 345px;
+  padding: clamp(10px, 2.5vw, 40px) 0 40px;
+  position: fixed;
+  top: 0;
+  background: white;
+  z-index: 10000;
+
+  @include breakpoint(small) {
+    width: 722px;
+    top: 50%;
+    left: 50%;
+    margin-left: -361px;
+  }
+
+  @include breakpoint(medium) {
+    width: 962px;
+    margin-left: -481px;
+  }
+
+  @include breakpoint(large) {
+    width: 1250px;
+    margin-left: -625px;
+    top: 0;
+  }
+
   &.open {
     .header__menu {
       > span:first-child {
@@ -20,6 +45,7 @@
   }
 
   &__logo {
+    cursor: pointer;
     width: clamp(100px, 7vw, 150px);
   }
 
@@ -44,6 +70,14 @@
       &:not(:last-child) {
         margin-bottom: clamp(5px, 1vw, 7px);
       }
+    }
+  }
+
+  &__current-page {
+    &--name {
+      margin-left: 10px;
+      font-weight: 400;
+      font-size: clamp(22px, 2.5vw, 32px);
     }
   }
 }

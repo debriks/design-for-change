@@ -32,12 +32,36 @@
 
       .scale-up {
         @include breakpoint(medium) {
-          transform: scale(1.4);
+          transform: scale(1.2);
         }
       }
     }
 
     &--txt {
+      .hover-red,
+      .hover-blue,
+      .hover-blk,
+      .hover-green {
+        cursor: pointer;
+        transition: color ease-in-out 0.3s;
+
+        &.hover-red:hover {
+          color: $clr-red;
+        }
+
+        &.hover-blue:hover {
+          color: $clr-blue;
+        }
+
+        &.hover-blk:hover {
+          color: black;
+        }
+
+        &.hover-green:hover {
+          color: $clr-green;
+        }
+      }
+
       h1,
       h2 {
         font-weight: 400;
@@ -45,12 +69,12 @@
       }
 
       h1 {
-        font-size: clamp(24px, 3vw, 40px);
+        font-size: $fs-h-1;
       }
 
       p {
-        font-size: clamp(18px, 1.9vw, 28px);
-        font-family: $secondary-font;
+        font-size: $fs-body;
+        font-family: $ff-secondary-font;
         line-height: 1.2;
       }
     }

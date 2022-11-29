@@ -2,17 +2,21 @@
 
 // TYPOGRAPHY
 
-$primary-font: "Libre Baskerville", serif;
-$secondary-font: "Helvetica", sans-serif;
-
-// COLORS
-
-$clr-red: hsl(2, 100%, 47%);
-$clr-blue: hsl(231, 100%, 50%);
-$clr-green: hsl(120, 100%, 32%);
+$ff-primary-font: "Libre Baskerville", serif;
+$ff-secondary-font: "Helvetica", sans-serif;
 
 $fw-light: 300;
 $fw-reg: 400;
 $fw-med: 500;
 $fw-semibold: 600;
 $fw-bold: 700;
+
+// $fs-h-1: clamp(24px, 3vw, 40px);
+$fs-h-1: clamp(26px, 3.7vw, 42px);
+$fs-body: clamp(18px, 1.9vw, 28px);
+
+// COLORS
+
+$clr-red: hsl(2, 100%, 47%);
+$clr-blue: hsl(231, 100%, 50%);
+$clr-green: hsl(120, 100%, 32%);

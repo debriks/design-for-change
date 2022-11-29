@@ -14,32 +14,28 @@
     <link rel="stylesheet" href="/dist/css/style.css" />
     <title>Design for Change</title>
   </head>
-  <body>
-    <main class="container p-inline flex col jc-c">
-      <header class="header">
-        <nav class="header__nav--mobile flex jc-sb ai-c">
-          <img
-            src="/images/dc-logo.svg"
-            alt="design for change logo"
-            class="header__logo"
-          />
-          <a id="btnHamburger" class="header__menu">
-            <span></span><span></span><span></span>
+  <body class="p-inline">
+    <header class="header" id="header">
+      <nav class="header__nav--mobile flex jc-sb ai-c">
+        <div class="header__current-page flex jc-sb ai-c">
+          <a href="/index.html" class="header__logo">
+            <img src="/images/dc-logo.svg" alt="design for change logo" />
           </a>
-        </nav>
-        <nav class="header__nav--desktop"></nav>
-      </header>
-      <section class="hero flex ai-c">
+          <h1 class="header__current-page--name"></h1>
+        </div>
+        <a id="btnHamburger" class="header__menu">
+          <span></span><span></span><span></span>
+        </a>
+      </nav>
+      <nav class="header__nav--desktop"></nav>
+    </header>
+    <main class="container flex col jc-c ai-c">
+      <section class="hero flex ai-c" id="hero">
         <div class="hero__intro txt-center">
-          <img
-            class="hero__intro--img"
-            src="/images/ladder.jpg"
-            alt="three-headed ladder"
-          />
           <p class="hero__intro--txt">
-            <span>Design for Change</span> une plateforme de conception de
-            modèles d’avenir durable au service des citoyens, de la collectivité
-            et des entreprises. <br /><br />
+            <span class="strong">Design for Change</span> est une plateforme de
+            conception de modèles d’avenir durable au service des citoyens, de
+            la collectivité et des entreprises. <br /><br />
             En suscitant de nouvelles formes de relations entre les personnes et
             les écosystèmes, nous contribuons au travers des projets à créer,
             transmettre et diffuser une nouvelle culture du design.
@@ -51,14 +47,16 @@
           <div class="features__feature--img img-primary reverse">
             <img src="/images/ladder.jpg" alt="tree-headed ladder" />
           </div>
-          <div class="features__feature--txt txt-center flex col gap-15">
-            <h1>/ EXPERTISE</h1>
-            <p>
-              Nous apportons notre expertise en conception de
-              <strong>projets</strong> et de <strong>stratégies</strong> pour
-              accompagner la mise en œuvre de solutions concrètes et durables
-              par le <strong>design</strong>.
-            </p>
+          <div class="features__feature--txt txt-center">
+            <a href="/expertise.html" class="hover-red flex col gap-15"
+              ><h1>/ EXPERTISE</h1>
+              <p>
+                Nous apportons notre expertise en conception de
+                <strong>projets</strong> et de <strong>stratégies</strong> pour
+                accompagner la mise en œuvre de solutions concrètes et durables
+                par le <strong>design</strong>.
+              </p>
+            </a>
           </div>
         </div>
         <div class="features__feature bt-1">
@@ -66,13 +64,16 @@
             <img src="/images/hammer.jpg" alt="curved hammer" />
           </div>
           <div class="features__feature--txt txt-center flex col gap-15">
-            <h1>/ PROJETS</h1>
-            <p>
-              Par le <strong>design</strong>, nous co-élaborons et initions des
-              <strong>stratégies de changement</strong> au travers de recherches
-              contextuelles, de nouveaux scénarios d’usage, d’expérimentations
-              qui amènent à des réalisations concrètes et pérennes.
-            </p>
+            <a href="/projets.html" class="hover-blue flex col gap-15">
+              <h1>/ PROJETS</h1>
+              <p>
+                Par le <strong>design</strong>, nous co-élaborons et initions
+                des <strong>stratégies de changement</strong> au travers de
+                recherches contextuelles, de nouveaux scénarios d’usage,
+                d’expérimentations qui amènent à des réalisations concrètes et
+                pérennes.
+              </p>
+            </a>
           </div>
         </div>
         <div class="features__feature bt-1 grid-l-sm">
@@ -82,12 +83,15 @@
           <div
             class="features__feature--txt txt-center flex col gap-15 clr-blue"
           >
-            <h1>/ PROJET PÉDAGOGIQUE</h1>
-            <h1>
-              Nous proposons une méthodologie pédagogique innovante, un nouvel
-              espace d’apprentissage où explorer, produire et expérimenter de
-              nouveaux modèles.
-            </h1>
+            <a href="/pedagogie.html" class="hover-blk flex col gap-15">
+              <h1>/ RECHERCHE PÉDAGOGIQUE</h1>
+              <h1>
+                Nous menons une recherche en pédagogie innovante et
+                pluridisciplinaire, un nouvel espace d’apprentissage où
+                explorer, produire et expérimenter de nouveaux modèles adaptés
+                aux enjeux climatiques.
+              </h1>
+            </a>
           </div>
         </div>
         <div class="features__feature bt-bb">
@@ -99,17 +103,20 @@
             />
           </div>
           <div class="features__feature--txt txt-center flex col gap-15">
-            <h1>/ ÉQUIPE</h1>
-            <p>
-              Pour répondre à la complexité des enjeux de la société, notre
-              équipe s’est constituée autour d’<strong
-                >un noyau pluridisciplinaire</strong
-              >
-              - en design, sciences humaines, communication. Grâce à un
-              <strong>réseau</strong>
-              construit au fil des années, notre communauté s’enrichit de
-              designers et autres experts nationaux et internationaux.
-            </p>
+            <a href="/equipe.html" class="hover-green flex col gap-15">
+              <h1>/ ÉQUIPE</h1>
+              <p>
+                Pour répondre à la complexité des enjeux de la société, notre
+                équipe s’est constituée autour d’<strong
+                  >un noyau pluridisciplinaire</strong
+                >
+                - en design, sciences humaines, communication. Grâce à un
+                <strong>réseau</strong>
+                construit au fil des années, notre communauté s’enrichit de de
+                designers, architectes, urbanistes, ingénieurs, penseurs et
+                autres experts…
+              </p>
+            </a>
           </div>
         </div>
       </section>

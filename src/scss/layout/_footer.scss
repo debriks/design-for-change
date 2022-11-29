@@ -4,6 +4,8 @@
 
 .footer {
   margin-top: 80px;
+  padding-bottom: 60px;
+  width: 100%;
 
   @include breakpoint(small) {
     &__br {

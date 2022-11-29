@@ -3,30 +3,42 @@
 @use "../utils/functions" as *;
 
 .hero {
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
 
   &__intro {
-    padding: 0 clamp(10px, 2vw, 40px);
+    padding: 0 clamp(15px, 2.5vw, 40px);
     font-size: clamp(24px, 3.5vw, 42px);
-    transform: translateY(-50px);
-
-    @include breakpoint(small) {
-      transform: translateY(-100px);
-    }
 
     > img {
       margin: 0 auto;
       width: clamp(250px, 30vw, 300px);
-      display: none;
     }
 
     &--txt {
       padding-top: 25px;
 
-      > span {
-        font-size: clamp(24px, 3.4vw, 46px);
-        font-family: $secondary-font;
-        font-weight: 600;
+      &--link {
+        display: inline-flex;
+
+        img {
+          width: 25px;
+          height: 25px;
+          transform: translateY(5px);
+
+          @include breakpoint(medium) {
+            width: 35px;
+            height: 35px;
+            transform: translateY(5px);
+          }
+
+          @include breakpoint(large) {
+            width: 42px;
+            height: 42px;
+            transform: translateY(7px);
+          }
+        }
       }
     }
   }

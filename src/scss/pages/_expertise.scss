@@ -1,0 +1,49 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+@use "../utils/functions" as *;
+
+.grid-exp {
+  margin-top: 250px;
+  grid-template-columns: 1fr;
+  padding-bottom: 40px;
+
+  @include breakpoint(small) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__block {
+    @include breakpoint(medium) {
+      padding-bottom: 40px;
+    }
+
+    &--title {
+      font-weight: $fw-reg;
+      font-size: $fs-h-1;
+      color: $clr-red;
+      padding: 30px 0;
+    }
+
+    &--body {
+      text-align: center;
+      line-height: 1.15;
+      > strong {
+        font-size: $fs-body;
+        font-family: $ff-secondary-font;
+        font-weight: $fw-bold;
+      }
+    }
+  }
+
+  &__grid {
+    padding: 20px 0;
+
+    &--item {
+      font-size: $fs-body;
+
+      > img {
+        width: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+}
