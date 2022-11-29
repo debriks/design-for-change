@@ -339,20 +339,8 @@ body {
   margin-top: 3px;
 }
 
-.bt-1 {
-  border-top: 0.1rem black solid;
-}
-
-.br-1 {
-  border-right: 0.1rem black solid;
-}
-
 .bt-bb {
   border-top: 0.1rem black solid;
-  border-bottom: 0.1rem black solid;
-}
-
-.bb-1 {
   border-bottom: 0.1rem black solid;
 }
 
@@ -366,18 +354,6 @@ body {
 
 .p-inline {
   padding: clamp(15px, 3vw, 40px);
-}
-
-.p-grid-item-1 {
-  padding: 8px 0;
-}
-
-.p-bl-l {
-  padding: 0 35px 0 15px;
-}
-
-.p-bl-r {
-  padding: 0 15px 0 35px;
 }
 
 .img-primary {
@@ -406,17 +382,25 @@ body {
 .grid-exp {
   margin-top: 250px;
   grid-template-columns: 1fr;
-  padding-bottom: 40px;
 }
 @media (min-width: 40rem) {
   .grid-exp {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-@media (min-width: 64rem) {
-  .grid-exp__block {
-    padding-bottom: 40px;
-  }
+.grid-exp__block {
+  border-top: 0.1rem solid black;
+  padding: 0 15px;
+}
+.grid-exp__block:nth-child(1), .grid-exp__block:nth-child(2) {
+  padding-bottom: 10px;
+}
+.grid-exp__block:nth-child(3) {
+  padding-bottom: 30px;
+}
+.grid-exp__block:nth-child(4) {
+  padding-bottom: 10px;
+  border-bottom: 0.1rem solid black;
 }
 .grid-exp__block--title {
   font-weight: 400;

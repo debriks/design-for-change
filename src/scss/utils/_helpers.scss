@@ -48,20 +48,8 @@
   margin-top: 3px;
 }
 
-.bt-1 {
-  border-top: 0.1rem black solid;
-}
-
-.br-1 {
-  border-right: 0.1rem black solid;
-}
-
 .bt-bb {
   border-top: 0.1rem black solid;
-  border-bottom: 0.1rem black solid;
-}
-
-.bb-1 {
   border-bottom: 0.1rem black solid;
 }
 
@@ -77,19 +65,7 @@
   padding: clamp(15px, 3vw, 40px);
 }
 
-.p-grid-item-1 {
-  padding: 8px 0;
-}
-
 // Expertise Grid Block Padding
-
-.p-bl-l {
-  padding: 0 35px 0 15px;
-}
-
-.p-bl-r {
-  padding: 0 15px 0 35px;
-}
 
 .img-primary {
   margin: 0 auto;
