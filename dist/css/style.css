@@ -339,6 +339,10 @@ body {
   margin-top: 3px;
 }
 
+.bt-1 {
+  border-top: 0.1rem solid black;
+}
+
 .bt-bb {
   border-top: 0.1rem black solid;
   border-bottom: 0.1rem black solid;
