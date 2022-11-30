@@ -19,17 +19,28 @@
     &--txt {
       padding-top: 25px;
 
-      &--link-red {
+      &--link {
         display: inline-flex;
-        border: 0.1rem solid $clr-red;
         border-radius: 50%;
         width: 25px;
         height: 25px;
         transform: translateY(4px);
         transition: background ease-in-out 0.3s;
 
-        &:hover {
-          background: $clr-red;
+        &.red {
+          border: 0.1rem solid $clr-red;
+
+          &:hover {
+            background: $clr-red;
+          }
+        }
+
+        &.green {
+          border: 0.1rem solid $clr-green;
+
+          &:hover {
+            background: $clr-green;
+          }
         }
 
         @include breakpoint(medium) {
@@ -42,12 +53,6 @@
 
           &:hover {
             filter: brightness(0) invert(1);
-          }
-
-          @include breakpoint(large) {
-            width: 42px;
-            height: 42px;
-            transform: translateY(7px);
           }
         }
       }

@@ -160,6 +160,7 @@ body {
   margin-left: 10px;
   font-weight: 400;
   font-size: clamp(22px, 2.5vw, 32px);
+  text-transform: uppercase;
 }
 
 .hero {
@@ -178,36 +179,37 @@ body {
 .hero__intro--txt {
   padding-top: 25px;
 }
-.hero__intro--txt--link-red {
+.hero__intro--txt--link {
   display: inline-flex;
-  border: 0.1rem solid hsl(2deg, 100%, 47%);
   border-radius: 50%;
   width: 25px;
   height: 25px;
   transform: translateY(4px);
   transition: background ease-in-out 0.3s;
 }
-.hero__intro--txt--link-red:hover {
+.hero__intro--txt--link.red {
+  border: 0.1rem solid hsl(2deg, 100%, 47%);
+}
+.hero__intro--txt--link.red:hover {
   background: hsl(2deg, 100%, 47%);
 }
+.hero__intro--txt--link.green {
+  border: 0.1rem solid hsl(120deg, 100%, 32%);
+}
+.hero__intro--txt--link.green:hover {
+  background: hsl(120deg, 100%, 32%);
+}
 @media (min-width: 64rem) {
-  .hero__intro--txt--link-red {
+  .hero__intro--txt--link {
     width: 35px;
     height: 35px;
   }
 }
-.hero__intro--txt--link-red img {
+.hero__intro--txt--link img {
   transition: filter ease-in-out 0.3s;
 }
-.hero__intro--txt--link-red img:hover {
+.hero__intro--txt--link img:hover {
   filter: brightness(0) invert(1);
-}
-@media (min-width: 90rem) {
-  .hero__intro--txt--link-red img {
-    width: 42px;
-    height: 42px;
-    transform: translateY(7px);
-  }
 }
 
 .features {
@@ -360,6 +362,17 @@ body {
   font-family: "Helvetica", sans-serif;
 }
 
+.fs-h1 {
+  font-size: clamp(26px, 3.7vw, 42px);
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.fs-body {
+  font-size: clamp(18px, 1.9vw, 28px);
+  line-height: 1.15;
+}
+
 .p-inline {
   padding: clamp(15px, 3vw, 40px);
 }
@@ -387,8 +400,32 @@ body {
   font-family: "Helvetica", sans-serif;
 }
 
+.red {
+  color: hsl(2deg, 100%, 47%);
+}
+
+.green {
+  color: hsl(120deg, 100%, 32%);
+}
+
+.blue {
+  color: hsl(231deg, 100%, 50%);
+}
+
+.grid-team {
+  margin-top: 200px;
+  grid-template-columns: 1fr;
+}
+.grid-team__item {
+  padding-bottom: 40px;
+}
+.grid-team__item--title {
+  text-align: center;
+  padding: 25px;
+}
+
 .grid-exp {
-  margin-top: 250px;
+  margin-top: 200px;
   grid-template-columns: 1fr;
 }
 @media (min-width: 40rem) {
@@ -430,9 +467,6 @@ body {
   }
 }
 .grid-exp__block--title {
-  font-weight: 400;
-  font-size: clamp(26px, 3.7vw, 42px);
-  color: hsl(2deg, 100%, 47%);
   padding: 30px 0;
 }
 .grid-exp__block--body {

@@ -65,6 +65,17 @@
   font-family: $ff-secondary-font;
 }
 
+.fs-h1 {
+  font-size: $fs-h-1;
+  font-weight: $fw-reg;
+  line-height: 1.2;
+}
+
+.fs-body {
+  font-size: $fs-body;
+  line-height: 1.15;
+}
+
 .p-inline {
   padding: clamp(15px, 3vw, 40px);
 }
@@ -92,4 +103,16 @@
 
 .ff-secondary {
   font-family: $ff-secondary-font;
+}
+
+.red {
+  color: $clr-red;
+}
+
+.green {
+  color: $clr-green;
+}
+
+.blue {
+  color: $clr-blue;
 }

@@ -1,0 +1,16 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+@use "../utils/functions" as *;
+
+.grid-team {
+  margin-top: 200px;
+  grid-template-columns: 1fr;
+
+  &__item {
+    padding-bottom: 40px;
+    &--title {
+      text-align: center;
+      padding: 25px;
+    }
+  }
+}
