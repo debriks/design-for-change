@@ -22,13 +22,17 @@
     }
 
     &--img {
-      width: clamp(250px, 30vw, 300px);
       transition: transform ease-in-out 0.5s;
       cursor: pointer;
 
       &:hover {
         -webkit-transform: rotateY(180deg);
         transform: rotateY(180deg);
+      }
+
+      img {
+        margin: 0 auto;
+        width: clamp(200px, 30vw, 300px);
       }
 
       .scale-up {

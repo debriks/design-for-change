@@ -254,12 +254,15 @@ body {
   }
 }
 .features__feature--img {
-  width: clamp(250px, 30vw, 300px);
   transition: transform ease-in-out 0.5s;
   cursor: pointer;
 }
 .features__feature--img:hover {
   transform: rotateY(180deg);
+}
+.features__feature--img img {
+  margin: 0 auto;
+  width: clamp(200px, 30vw, 300px);
 }
 @media (min-width: 64rem) {
   .features__feature--img .scale-up {
@@ -485,7 +488,6 @@ body {
 
 .grid-exp {
   max-width: 1215px;
-  margin-top: 100px;
   grid-template-columns: 1fr;
 }
 @media (min-width: 40rem) {
