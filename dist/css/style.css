@@ -98,8 +98,8 @@ body {
 }
 
 .header {
-  width: 345px;
-  padding: clamp(10px, 2.5vw, 40px) 0 40px;
+  width: 100%;
+  padding: clamp(15px, 2.5vw, 40px) clamp(20px, 3vw, 50px) clamp(20px, 3vw, 50px);
   position: fixed;
   top: 0;
   background: white;
