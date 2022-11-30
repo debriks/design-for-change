@@ -25,7 +25,7 @@
 }
 
 .grid-l-sm {
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 65% 35%;
 }
 
 .col {
@@ -74,6 +74,7 @@
 .fs-body {
   font-size: $fs-body;
   line-height: 1.15;
+  word-break: break-word;
 }
 
 .p-inline {
@@ -95,10 +96,6 @@
   font-size: clamp(24px, 3.4vw, 46px);
   font-family: $ff-secondary-font;
   font-weight: 600;
-}
-
-.move-down {
-  transform: translateY(120px);
 }
 
 .ff-secondary {

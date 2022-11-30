@@ -3,14 +3,38 @@
 @use "../utils/functions" as *;
 
 .grid-team {
-  margin-top: 200px;
-  grid-template-columns: 1fr;
+  margin-top: 100px;
 
   &__item {
-    padding-bottom: 40px;
+    padding: 0 8px 40px;
+
     &--title {
       text-align: center;
       padding: 25px;
+
+      @include breakpoint(small) {
+        padding: 45px;
+      }
+    }
+
+    &--body {
+      gap: 20px;
+
+      @include breakpoint(small) {
+        padding: 0 60px;
+      }
+
+      @include breakpoint(medium) {
+        display: flex;
+        flex-flow: row wrap;
+        padding: 0 50px;
+      }
+
+      p {
+        @include breakpoint(medium) {
+          flex: 1;
+        }
+      }
     }
   }
 }

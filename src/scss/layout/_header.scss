@@ -8,21 +8,9 @@
     clamp(20px, 3vw, 50px);
   position: fixed;
   top: 0;
+  left: 0;
   background: white;
   z-index: 10000;
-
-  @include breakpoint(small) {
-    width: 722px;
-  }
-
-  @include breakpoint(medium) {
-    width: 962px;
-  }
-
-  @include breakpoint(large) {
-    width: 1250px;
-    top: 0;
-  }
 
   &.open {
     .header__menu {
