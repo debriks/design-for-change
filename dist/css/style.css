@@ -262,7 +262,7 @@ body {
 }
 .features__feature--img img {
   margin: 0 auto;
-  width: clamp(200px, 30vw, 300px);
+  width: clamp(240px, 30vw, 300px);
 }
 @media (min-width: 64rem) {
   .features__feature--img .scale-up {
