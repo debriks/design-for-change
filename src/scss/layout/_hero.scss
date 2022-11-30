@@ -8,8 +8,16 @@
   justify-content: center;
   margin-top: 50px;
 
+  @include breakpoint(small) {
+    margin-top: -40px;
+  }
+
+  @include breakpoint(medium) {
+    margin-top: 0px;
+  }
+
   &__intro {
-    padding: 0 clamp(15px, 2.5vw, 40px);
+    padding: 0 clamp(15px, 7vw, 100px);
     font-size: clamp(24px, 3.5vw, 42px);
     line-height: 1.2;
 
@@ -49,6 +57,14 @@
 
           &:hover {
             background: $clr-green;
+          }
+        }
+
+        &.blue {
+          border: 0.1rem solid $clr-blue;
+
+          &:hover {
+            background: $clr-blue;
           }
         }
 
