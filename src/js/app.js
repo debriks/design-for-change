@@ -26,12 +26,12 @@ btnHamburger.addEventListener("click", function () {
 
 // ARROW LINKS ON HOVER
 
-const linkIcon = document.getElementById("linkIcon");
+// const linkIcon = document.getElementById("linkIcon");
 
-function hover(linkIcon) {
-  linkIcon.setAttribute("src", "/images/red-arrow-hover.png");
-}
+// function hover(linkIcon) {
+//   linkIcon.setAttribute("src", "/images/red-arrow-hover.png");
+// }
 
-function unhover(linkIcon) {
-  linkIcon.setAttribute("src", "/images/red-arrow.png");
-}
+// function unhover(linkIcon) {
+//   linkIcon.setAttribute("src", "/images/red-arrow.png");
+// }

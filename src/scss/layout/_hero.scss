@@ -19,18 +19,29 @@
     &--txt {
       padding-top: 25px;
 
-      &--link {
+      &--link-red {
         display: inline-flex;
+        border: 0.1rem solid $clr-red;
+        border-radius: 50%;
+        width: 25px;
+        height: 25px;
+        transform: translateY(4px);
+        transition: background ease-in-out 0.3s;
+
+        &:hover {
+          background: $clr-red;
+        }
+
+        @include breakpoint(medium) {
+          width: 35px;
+          height: 35px;
+        }
 
         img {
-          width: 25px;
-          height: 25px;
-          transform: translateY(5px);
+          transition: filter ease-in-out 0.3s;
 
-          @include breakpoint(medium) {
-            width: 35px;
-            height: 35px;
-            transform: translateY(5px);
+          &:hover {
+            filter: brightness(0) invert(1);
           }
 
           @include breakpoint(large) {

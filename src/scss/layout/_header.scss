@@ -12,19 +12,14 @@
 
   @include breakpoint(small) {
     width: 722px;
-    top: 50%;
-    left: 50%;
-    margin-left: -361px;
   }
 
   @include breakpoint(medium) {
     width: 962px;
-    margin-left: -481px;
   }
 
   @include breakpoint(large) {
     width: 1250px;
-    margin-left: -625px;
     top: 0;
   }
 

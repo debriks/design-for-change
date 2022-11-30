@@ -28,6 +28,30 @@
       border-bottom: 0.1rem solid black;
     }
 
+    @include breakpoint(small) {
+      padding: 0 25px;
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        border-right: 0.1rem solid black;
+      }
+
+      &:nth-child(3) {
+        border-bottom: 0.1rem solid black;
+      }
+    }
+
+    @include breakpoint(medium) {
+      &:nth-child(1),
+      &:nth-child(3) {
+        padding-right: 45px;
+      }
+      &:nth-child(2),
+      &:nth-child(4) {
+        padding-left: 45px;
+      }
+    }
+
     &--title {
       font-weight: $fw-reg;
       font-size: $fs-h-1;
