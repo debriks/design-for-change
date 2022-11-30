@@ -3,6 +3,7 @@
 @use "../utils/functions" as *;
 
 .header {
+  display: inline-block;
   width: 100%;
   padding: clamp(15px, 2.5vw, 40px) clamp(20px, 3vw, 50px)
     clamp(20px, 3vw, 50px);
@@ -11,6 +12,14 @@
   left: 0;
   background: white;
   z-index: 10000;
+
+  @include breakpoint(medium) {
+    padding: 40px 110px;
+  }
+
+  @include breakpoint(xlarge) {
+    padding: 40px 250px;
+  }
 
   &.open {
     .header__menu {
@@ -61,7 +70,7 @@
     &--name {
       margin-left: 10px;
       font-weight: 400;
-      font-size: clamp(22px, 2.5vw, 32px);
+      font-size: clamp(20px, 2.5vw, 32px);
       text-transform: uppercase;
     }
   }

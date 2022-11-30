@@ -120,3 +120,16 @@
 .blue {
   color: $clr-blue;
 }
+
+.move-up {
+  margin-top: -140px;
+}
+
+.fs-sm-resp {
+  font-size: clamp(13px, 2.5vw, 32px);
+  line-height: 1.1;
+}
+
+.mt-grid {
+  margin-top: 100px;
+}

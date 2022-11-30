@@ -1,0 +1,21 @@
+@use "../utils/variables" as *;
+@use "../utils/mixins" as *;
+@use "../utils/functions" as *;
+
+.grid-peda {
+  max-width: 1215px;
+  padding-top: 50px;
+
+  @include breakpoint(small) {
+    display: flex;
+    gap: 50px;
+  }
+
+  @include breakpoint(medium) {
+    padding: 75px 50px;
+  }
+
+  &__item {
+    flex: 1;
+  }
+}

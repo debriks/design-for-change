@@ -3,23 +3,21 @@
 @use "../utils/functions" as *;
 
 .hero {
-  min-height: 100vh;
   display: flex;
   justify-content: center;
-  margin-top: 50px;
-
-  @include breakpoint(small) {
-    margin-top: -40px;
-  }
-
-  @include breakpoint(medium) {
-    margin-top: 0px;
-  }
+  padding-top: 100px;
 
   &__intro {
-    padding: 0 clamp(15px, 7vw, 100px);
-    font-size: clamp(24px, 3.5vw, 42px);
+    font-size: clamp(24px, 3.2vw, 38px);
     line-height: 1.2;
+
+    @include breakpoint(medium) {
+      padding: 0 50px;
+    }
+
+    @include breakpoint(large) {
+      padding: 50px 150px;
+    }
 
     > img {
       margin: 0 auto;

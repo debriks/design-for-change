@@ -5,6 +5,7 @@
 .footer {
   margin-top: 80px;
   width: 100%;
+  max-width: 1440px;
 
   @include breakpoint(small) {
     &__br {
