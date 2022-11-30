@@ -254,6 +254,7 @@ body {
   }
 }
 .features__feature--img {
+  width: clamp(250px, 30vw, 300px);
   transition: transform ease-in-out 0.5s;
   cursor: pointer;
 }
