@@ -36,10 +36,12 @@ const btnOverlayClose = document.querySelectorAll(".btn-close-overlay");
 
 btnOverlay1.addEventListener("click", function () {
   overlay1.classList.add("visible");
+  window.scrollTo(0, 0);
 });
 
 btnOverlay2.addEventListener("click", function () {
   overlay2.classList.add("visible");
+  window.scrollTo(0, 0);
 });
 
 btnOverlay3.addEventListener("click", function () {
