@@ -14,30 +14,175 @@
     <link rel="stylesheet" href="/dist/css/style.css" />
     <title>Design for Change | Equipe</title>
   </head>
-  <body class="p-inline">
-    <main class="container flex col jc-c ai-c">
-      <header class="header top-nav">
-        <nav class="header__nav--mobile flex jc-sb ai-c">
-          <div class="header__current-page flex jc-sb ai-c">
-            <a href="/index.html" class="header__logo">
-              <img src="/images/dc-logo.svg" alt="design for change logo" />
-            </a>
-            <h1 class="header__current-page--name mt-3">équipe</h1>
-          </div>
-          <a id="btnHamburger" class="header__menu">
-            <span></span><span></span><span></span>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__nav--left">
+          <a href="/index.html" class="header__logo">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 61.5 23.2"
+              style="enable-background: new 0 0 61.5 23.2"
+              xml:space="preserve"
+            >
+              <style>
+                path {
+                  fill: rgb(0, 0, 0);
+                }
+                header.open path {
+                  fill: rgb(255, 255, 255);
+                }
+              </style>
+              <g>
+                <path
+                  class="st0"
+                  d="M0.3,0.9h9.4c5.6,0,9.8,3.5,9.8,10.7c0,6.3-3.2,11-9.8,11H0.3V0.9z M5.1,18.5h4.2c2.7,0,5.4-1.7,5.4-6.5
+  c0-4.3-1.5-7.2-6.3-7.2H5.1V18.5z"
+                />
+                <path
+                  class="st0"
+                  d="M31.4,13.3h6.1v3.2h-6.1v6.1h-3.2v-6.1h-6.1v-3.2h6.1V7.2h3.2V13.3z"
+                />
+                <path
+                  class="st0"
+                  d="M55.4,8.1c-0.3-2.1-2.3-3.8-4.7-3.8c-4.2,0-5.9,3.6-5.9,7.5c0,3.6,1.6,7.3,5.9,7.3c2.9,0,4.5-2,4.9-4.8h4.6
+  c-0.5,5.4-4.2,8.9-9.5,8.9c-6.7,0-10.7-5-10.7-11.3c0-6.5,3.9-11.4,10.7-11.4c4.7,0,8.8,2.8,9.4,7.8C60.2,8.1,55.4,8.1,55.4,8.1z"
+                />
+              </g>
+            </svg>
           </a>
+          <h1 class="current-page"></h1>
+        </div>
+
+        <button id="btnHamburger" class="header__menu">
+          <span class="hamburger"></span><span class="hamburger"></span
+          ><span class="hamburger"></span>
+        </button>
+      </nav>
+      <hr class="header__rule rule" />
+
+      <nav class="header__subnav white">
+        <!-- SUBNAV EXPERTISE -->
+        <div class="header__subnav--item flex col">
+          <a
+            href="./pages/expertise.html"
+            class="header__subnav--link ff-primary fs-subnav-link txt-center white"
+            >Expertise</a
+          >
+          <a href="./pages/expertise.html" class="header__subnav--img">
+            <img src="/images/ladder-white.png" alt="three-headed ladder" />
+          </a>
+        </div>
+
+        <!-- SUBNAV PROJETS -->
+        <div class="header__subnav--item flex col">
+          <a
+            href="./pages/projets.html"
+            class="header__subnav--link ff-primary fs-subnav-link txt-center white"
+            >Projets</a
+          >
+          <a href="./pages/projets.html" class="header__subnav--img">
+            <img src="/images/hammer_white.png" alt="curved hammer" />
+          </a>
+        </div>
+
+        <!-- SUBNAV RECHERCHE -->
+        <div class="header__subnav--item flex col">
+          <a
+            href="./pages/recherche.html"
+            class="header__subnav--link ff-primary fs-subnav-link txt-center blue-subnav"
+            >Recherche</a
+          >
+          <a href="./pages/recherche.html" class="header__subnav--img">
+            <img
+              src="/images/multiple-hammers-transparent.png"
+              alt="hammer wheel"
+            />
+          </a>
+        </div>
+
+        <!-- SUBNAV EQUIPE -->
+        <div class="header__subnav--item flex col">
+          <a
+            href="./pages/equipe.html"
+            class="header__subnav--link ff-primary fs-subnav-link txt-center white"
+            >équipe</a
+          >
+          <a href="./pages/equipe.html" class="header__subnav--img">
+            <img
+              class="scale-up"
+              src="/images/umbrellas-white.png"
+              alt="three-headed umbrellas"
+            />
+          </a>
+        </div>
+        <!-- SUBNAV FOOTER -->
+        <nav class="subnav__footer">
+          <div class="subnav__footer--item">
+            <a
+              href="./pages/vision.html"
+              class="subnav__footer--link ff-secondary white fs-body-sublink"
+            >
+              Notre <br class="subnav__footer--br" />vision
+            </a>
+          </div>
+          <div class="subnav__footer--item">
+            <a
+              href="./pages/membres.html"
+              class="subnav__footer--link ff-secondary white fs-body-sublink"
+            >
+              Nos <br class="subnav__footer--br" />membres
+            </a>
+          </div>
+          <div class="subnav__footer--item">
+            <a
+              href="./pages/reseau.html"
+              class="subnav__footer--link ff-secondary white fs-body-sublink"
+            >
+              Notre <br class="subnav__footer--br" />réseau
+            </a>
+          </div>
+          <div class="subnav__footer--item">
+            <a
+              href="./pages/contact.html"
+              class="subnav__footer--link ff-secondary white fs-body-sublink"
+            >
+              Nous <br class="subnav__footer--br" />contacter
+            </a>
+          </div>
+          <div class="subnav__footer--item flex col">
+            <a
+              href="https://www.facebook.com/designforchange/"
+              target="_blank"
+              class="subnav__footer--link ff-secondary white fs-body-sublink"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="subnav__footer--link ff-secondary white fs-body-sublink"
+            >
+              Instagram
+            </a>
+          </div>
         </nav>
-        <nav class="header__nav--desktop"></nav>
-      </header>
+      </nav>
+    </header>
+    <main class="container flex col jc-c ai-c">
       <section class="hero flex ai-c">
         <div class="hero__intro txt-center">
           <img
-            class="hero__intro--img scale-up"
+            class="hero__intro--img"
             src="/images/umbrellas.jpg"
             alt="three-headed umbrellas"
           />
-          <p class="hero__intro--txt">
+          <p class="hero__intro--txt ff-primary">
             Pour répondre à la complexité des enjeux de la société, notre équipe
             s’est constituée autour d’un noyau pluridisciplinaire - en design,
             sciences humaines, communication. <br />
@@ -51,12 +196,14 @@
           </p>
         </div>
       </section>
-      <section class="grid-team grid">
+      <section class="grid-team grid mt-grid">
         <!-- CAROLINE -->
         <div class="grid-team__item bt-1">
-          <h1 class="grid-team__item--title fs-h1 green">CAROLINE NAPHEGYI</h1>
+          <h1 class="grid-team__item--title ff-primary fs-h1 green">
+            CAROLINE NAPHEGYI
+          </h1>
           <div class="grid-team__item--body txt-secondary">
-            <p class="fs-body">
+            <p class="fs-body ff-secondary">
               Caroline Naphegyi est membre du comité artistique
               <strong>Mondes Nouveaux</strong> initié par le gouvernement dans
               le cadre du plan de relance dédié à la jeune création. Après avoir
@@ -74,7 +221,7 @@
               Baron, et speaker invité à la <strong>Seoul Design Week</strong>.
             </p>
             <br />
-            <p class="fs-body">
+            <p class="fs-body ff-secondary">
               Après avoir contribué de 2000 à 2006 à la programmation en design
               de
               <strong>Lille 2004 Capitale européenne de la culture</strong>,
@@ -99,9 +246,11 @@
 
         <!-- GIOVANNA -->
         <div class="grid-team__item bt-1">
-          <h1 class="grid-team__item--title fs-h1 green">GIOVANNA MASSONI</h1>
+          <h1 class="grid-team__item--title ff-primary fs-h1 green">
+            GIOVANNA MASSONI
+          </h1>
           <div class="grid-team__item--body txt-secondary">
-            <p class="fs-body">
+            <p class="fs-body ff-secondary">
               Giovanna Massoni (née à Milan, vit à Bruxelles) est une curatrice
               et consultante indépendante qui travaille dans le domaine du
               design et des arts plastiques. Depuis 2005, elle collabore
@@ -128,7 +277,7 @@
               cadre de la Milan Design Week 2008.
             </p>
             <br />
-            <p class="fs-body">
+            <p class="fs-body ff-secondary">
               En 2009 et 2011, elle a été consultante pour le
               <strong> CESE (Comité économique et social européen) </strong>pour
               la première et la deuxième édition du prix du design durable.
@@ -154,9 +303,11 @@
 
         <!-- PAM&JENNY -->
         <div class="grid-team__item bt-1">
-          <h1 class="grid-team__item--title fs-h1 green">PAM & JENNY</h1>
+          <h1 class="grid-team__item--title ff-primary fs-h1 green">
+            PAM & JENNY
+          </h1>
           <div class="grid-team__item--body txt-secondary">
-            <p class="fs-body">
+            <p class="fs-body ff-secondary">
               Caroline Naphegyi est membre du comité artistique
               <strong>Mondes Nouveaux</strong> initié par le gouvernement dans
               le cadre du plan de relance dédié à la jeune création. Après avoir
@@ -174,7 +325,7 @@
               Baron, et speaker invité à la <strong>Seoul Design Week</strong>.
             </p>
             <br />
-            <p class="fs-body">
+            <p class="fs-body ff-secondary">
               Après avoir contribué de 2000 à 2006 à la programmation en design
               de
               <strong>Lille 2004 Capitale européenne de la culture</strong>,
@@ -197,7 +348,7 @@
           </div>
         </div>
       </section>
-      <footer class="footer flex jc-sb txt-secondary">
+      <footer class="footer flex jc-sb ff-secondary">
         <small
           >© Design for Change <br class="footer__br" />
           2022</small
@@ -209,5 +360,6 @@
         <small>Crédits</small>
       </footer>
     </main>
+    <script src="/src/js/app.js"></script>
   </body>
 </html>

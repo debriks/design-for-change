@@ -16,7 +16,7 @@
     }
 
     @include breakpoint(large) {
-      padding: 50px 150px;
+      padding: 50px 100px;
     }
 
     > img {
@@ -73,6 +73,11 @@
 
         img {
           transition: filter ease-in-out 0.3s;
+          padding: 5px;
+
+          @include breakpoint(medium) {
+            padding: 7px;
+          }
 
           &:hover {
             filter: brightness(0) invert(1);

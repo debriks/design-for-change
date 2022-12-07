@@ -3,13 +3,16 @@
 @use "../utils/functions" as *;
 
 body {
-  display: grid;
+  position: relative;
+  display: flex;
+  flex-flow: column;
   justify-content: center;
-  font-family: $ff-primary-font;
+  align-items: center;
+  padding: clamp(15px, 3vw, 50px);
+  position: relative;
 }
 
 .container {
-  @include breakpoint(xlarge) {
-    max-width: 1220px;
-  }
+  width: 100%;
+  max-width: 1220px;
 }

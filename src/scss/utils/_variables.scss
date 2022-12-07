@@ -2,8 +2,8 @@
 
 // TYPOGRAPHY
 
-$ff-primary-font: "Libre Baskerville", serif;
-$ff-secondary-font: "Helvetica", sans-serif;
+$ff-primary: "Libre Baskerville", serif;
+$ff-secondary: "Helvetica", sans-serif;
 
 $fw-light: 300;
 $fw-reg: 400;
@@ -12,11 +12,16 @@ $fw-semibold: 600;
 $fw-bold: 700;
 
 // $fs-h-1: clamp(24px, 3vw, 40px);
-$fs-h-1: clamp(26px, 3.7vw, 42px);
+$fs-h1: clamp(25px, 2.5vw, 38px);
+$fs-h1-grid: clamp(28px, 3vw, 38px);
+$fs-h2: clamp(25px, 2.3vw, 30px);
+
 $fs-body: clamp(18px, 1.9vw, 24px);
+$fs-body-sublink: clamp(16px, 1.9vw, 20px);
+$fs-btn-lang: clamp(rem(20), 3vw, rem(26));
 
 // COLORS
 
 $clr-red: hsl(2, 100%, 47%);
-$clr-blue: hsl(231, 100%, 50%);
+$clr-blue: #0026ff;
 $clr-green: hsl(120, 100%, 32%);

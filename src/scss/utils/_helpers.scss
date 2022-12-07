@@ -48,6 +48,10 @@
   margin-top: 3px;
 }
 
+.pt-med {
+  padding-top: 50px;
+}
+
 .bt-1 {
   border-top: 0.1rem solid black;
 }
@@ -61,14 +65,20 @@
   text-align: center;
 }
 
-.txt-secondary {
-  font-family: $ff-secondary-font;
+.txt-start {
+  text-align: start;
 }
 
 .fs-h1 {
-  font-size: $fs-h-1;
+  font-size: $fs-h1;
   font-weight: $fw-reg;
   line-height: 1.2;
+}
+
+.fs-h2 {
+  font-size: $fs-h2;
+  font-weight: $fw-reg;
+  line-height: 1.25;
 }
 
 .fs-body {
@@ -95,18 +105,22 @@
   width: clamp(250px, 30vw, 300px);
 }
 
-.clr-blue {
-  color: $clr-blue;
-}
-
 .strong {
   font-size: clamp(24px, 3.4vw, 46px);
-  font-family: $ff-secondary-font;
+  font-family: $ff-secondary;
   font-weight: 600;
 }
 
+.ff-primary {
+  font-family: $ff-primary;
+}
+
 .ff-secondary {
-  font-family: $ff-secondary-font;
+  font-family: $ff-secondary;
+}
+
+.white {
+  color: white;
 }
 
 .red {
@@ -121,6 +135,14 @@
   color: $clr-blue;
 }
 
+.blue-subnav {
+  color: #425dfb;
+}
+
+.white {
+  color: white;
+}
+
 .move-up {
   margin-top: -140px;
 }
@@ -132,4 +154,62 @@
 
 .mt-grid {
   margin-top: 100px;
+}
+
+.fs-body {
+  font-size: $fs-body;
+}
+
+.fs-body-sublink {
+  font-size: $fs-body-sublink;
+}
+
+.fs-subnav-link {
+  font-family: $ff-primary;
+  font-weight: $fw-reg;
+  font-size: clamp(22px, 2.7vw, 30px);
+  text-transform: uppercase;
+}
+
+.strong {
+  font-family: $ff-secondary;
+  font-weight: $fw-semibold;
+  font-size: clamp(25px, 3vw, 40px);
+}
+
+.scale-up {
+  scale: 1.1;
+  transform: translateY(12px);
+}
+
+.hover-red,
+.hover-blue,
+.hover-blk,
+.hover-green {
+  cursor: pointer;
+  transition: color ease-in-out 0.3s;
+}
+
+.hover-red:hover {
+  color: $clr-red;
+}
+
+.hover-blue:hover {
+  color: $clr-blue;
+}
+
+.hover-blk:hover {
+  color: black;
+}
+
+.hover-green:hover {
+  color: $clr-green;
+}
+
+.ff-primary {
+  font-family: $ff-primary;
+}
+
+.pt-sm {
+  padding-top: 5px;
 }

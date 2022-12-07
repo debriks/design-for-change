@@ -1,0 +1,811 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="/dist/css/style.css" />
+    <title>Design for Change | Projets</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <div class="header__nav--left">
+          <a href="/index.html" class="header__logo">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 61.5 23.2"
+              style="enable-background: new 0 0 61.5 23.2"
+              xml:space="preserve"
+            >
+              <style>
+                path {
+                  fill: rgb(0, 0, 0);
+                }
+                header.open path {
+                  fill: rgb(255, 255, 255);
+                }
+              </style>
+              <g>
+                <path
+                  class="st0"
+                  d="M0.3,0.9h9.4c5.6,0,9.8,3.5,9.8,10.7c0,6.3-3.2,11-9.8,11H0.3V0.9z M5.1,18.5h4.2c2.7,0,5.4-1.7,5.4-6.5
+  c0-4.3-1.5-7.2-6.3-7.2H5.1V18.5z"
+                />
+                <path
+                  class="st0"
+                  d="M31.4,13.3h6.1v3.2h-6.1v6.1h-3.2v-6.1h-6.1v-3.2h6.1V7.2h3.2V13.3z"
+                />
+                <path
+                  class="st0"
+                  d="M55.4,8.1c-0.3-2.1-2.3-3.8-4.7-3.8c-4.2,0-5.9,3.6-5.9,7.5c0,3.6,1.6,7.3,5.9,7.3c2.9,0,4.5-2,4.9-4.8h4.6
+  c-0.5,5.4-4.2,8.9-9.5,8.9c-6.7,0-10.7-5-10.7-11.3c0-6.5,3.9-11.4,10.7-11.4c4.7,0,8.8,2.8,9.4,7.8C60.2,8.1,55.4,8.1,55.4,8.1z"
+                />
+              </g>
+            </svg>
+          </a>
+          <h1 class="current-page"></h1>
+        </div>
+
+        <button id="btnHamburger" class="header__menu">
+          <span class="hamburger"></span><span class="hamburger"></span
+          ><span class="hamburger"></span>
+        </button>
+      </nav>
+      <hr class="header__rule rule" />
+
+      <nav class="header__subnav white">
+        <!-- SUBNAV EXPERTISE -->
+        <div class="header__subnav--item flex col">
+          <a
+            href="./pages/expertise.html"
+            class="header__subnav--link ff-primary fs-subnav-link txt-center white"
+            >Expertise</a
+          >
+          <a href="./pages/expertise.html" class="header__subnav--img">
+            <img src="/images/ladder-white.png" alt="three-headed ladder" />
+          </a>
+        </div>
+
+        <!-- SUBNAV PROJETS -->
+        <div class="header__subnav--item flex col">
+          <a
+            href="./pages/projets.html"
+            class="header__subnav--link ff-primary fs-subnav-link txt-center white"
+            >Projets</a
+          >
+          <a href="./pages/projets.html" class="header__subnav--img">
+            <img src="/images/hammer_white.png" alt="curved hammer" />
+          </a>
+        </div>
+
+        <!-- SUBNAV RECHERCHE -->
+        <div class="header__subnav--item flex col">
+          <a
+            href="./pages/recherche.html"
+            class="header__subnav--link ff-primary fs-subnav-link txt-center blue-subnav"
+            >Recherche</a
+          >
+          <a href="./pages/recherche.html" class="header__subnav--img">
+            <img
+              src="/images/multiple-hammers-transparent.png"
+              alt="hammer wheel"
+            />
+          </a>
+        </div>
+
+        <!-- SUBNAV EQUIPE -->
+        <div class="header__subnav--item flex col">
+          <a
+            href="./pages/equipe.html"
+            class="header__subnav--link ff-primary fs-subnav-link txt-center white"
+            >équipe</a
+          >
+          <a href="./pages/equipe.html" class="header__subnav--img">
+            <img
+              class="scale-up"
+              src="/images/umbrellas-white.png"
+              alt="three-headed umbrellas"
+            />
+          </a>
+        </div>
+        <!-- SUBNAV FOOTER -->
+        <nav class="subnav__footer">
+          <div class="subnav__footer--item">
+            <a
+              href="./pages/vision.html"
+              class="subnav__footer--link ff-secondary white fs-body-sublink"
+            >
+              Notre <br class="subnav__footer--br" />vision
+            </a>
+          </div>
+          <div class="subnav__footer--item">
+            <a
+              href="./pages/membres.html"
+              class="subnav__footer--link ff-secondary white fs-body-sublink"
+            >
+              Nos <br class="subnav__footer--br" />membres
+            </a>
+          </div>
+          <div class="subnav__footer--item">
+            <a
+              href="./pages/reseau.html"
+              class="subnav__footer--link ff-secondary white fs-body-sublink"
+            >
+              Notre <br class="subnav__footer--br" />réseau
+            </a>
+          </div>
+          <div class="subnav__footer--item">
+            <a
+              href="./pages/contact.html"
+              class="subnav__footer--link ff-secondary white fs-body-sublink"
+            >
+              Nous <br class="subnav__footer--br" />contacter
+            </a>
+          </div>
+          <div class="subnav__footer--item flex col">
+            <a
+              href="https://www.facebook.com/designforchange/"
+              target="_blank"
+              class="subnav__footer--link ff-secondary white fs-body-sublink"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="subnav__footer--link ff-secondary white fs-body-sublink"
+            >
+              Instagram
+            </a>
+          </div>
+        </nav>
+      </nav>
+    </header>
+    <main class="container flex col jc-c ai-c">
+      <section class="hero flex ai-c">
+        <div class="hero__intro txt-center">
+          <img
+            class="hero__intro--img"
+            src="/images/hammer.jpg"
+            alt="curved hammer"
+          />
+          <p class="hero__intro--txt ff-primary">
+            Par le design, nous co-élaborons et initions des stratégies de
+            changement
+            <a href="reseau.html" class="hero__intro--txt--link blue">
+              <img src="/images/blue-arrow-single.png" />
+            </a>
+            au travers de recherches contextuelles, de nouveaux scénarios
+            d’usage, d’expérimentations qui amènent à des réalisations concrètes
+            et pérennes.
+          </p>
+        </div>
+      </section>
+      <section class="grid-projects grid mt-grid">
+        <!-- GRID ITEM #1 -->
+        <div class="grid-projects__item grid">
+          <div class="grid-projects__item--img blue">
+            <div id="btnOverlay1" class="grid-projects__item--img--bg">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 10.8 10.8"
+                style="enable-background: new 0 0 10.8 10.8"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #ffffff;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M7.7,1.1C6.8,1.2,5.9,1.3,4.9,1.2c0,0,0,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0.3,0.3,0.7,0.6,1.2,0.7
+		c0.5,0.2,1.1,0.2,1.8,0.2L0.5,9.9l0.3,0.3l7.6-7.6c0,0.7,0.1,1.3,0.3,1.8c0.2,0.5,0.4,0.9,0.7,1.2c0,0,0.1,0.1,0.1,0.1
+		s0.1,0.1,0.1,0.1C9.5,4.9,9.5,4,9.7,3.1c0.1-0.9,0.4-1.8,0.8-2.7C9.5,0.7,8.6,1,7.7,1.1"
+                  />
+                </g>
+              </svg>
+            </div>
+            <img
+              class="blue"
+              src="/images/world-map.png"
+              alt="flatten world map"
+            />
+          </div>
+          <h1 class="grid-projects__item--title fs-grid-h1 blue ff-primary">
+            CONCOURS INTERNATIONAL D+C
+          </h1>
+        </div>
+
+        <!-- GRID ITEM #2 -->
+        <div class="grid-projects__item grid">
+          <div class="grid-projects__item--img">
+            <div id="btnOverlay2" class="grid-projects__item--img--bg">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 10.8 10.8"
+                style="enable-background: new 0 0 10.8 10.8"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #ffffff;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M7.7,1.1C6.8,1.2,5.9,1.3,4.9,1.2c0,0,0,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0.3,0.3,0.7,0.6,1.2,0.7
+		c0.5,0.2,1.1,0.2,1.8,0.2L0.5,9.9l0.3,0.3l7.6-7.6c0,0.7,0.1,1.3,0.3,1.8c0.2,0.5,0.4,0.9,0.7,1.2c0,0,0.1,0.1,0.1,0.1
+		s0.1,0.1,0.1,0.1C9.5,4.9,9.5,4,9.7,3.1c0.1-0.9,0.4-1.8,0.8-2.7C9.5,0.7,8.6,1,7.7,1.1"
+                  />
+                </g>
+              </svg>
+            </div>
+            <img src="/images/farm.png" alt="urban farm" />
+          </div>
+          <div class="grid-projects__item--txt">
+            <h1 class="grid-projects__item--txt--title fs-grid-h1 ff-primary">
+              FARM FOR CHANGE
+            </h1>
+            <p class="grid-projects__item--txt--body fs-body ff-secondary">
+              Lille, Gare Saint Sauveur <br />
+              2015
+            </p>
+          </div>
+        </div>
+
+        <!-- GRID ITEM #3 -->
+        <div class="grid-projects__item grid">
+          <div class="grid-projects__item--img">
+            <div id="btnOverlay3" class="grid-projects__item--img--bg">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 10.8 10.8"
+                style="enable-background: new 0 0 10.8 10.8"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #ffffff;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M7.7,1.1C6.8,1.2,5.9,1.3,4.9,1.2c0,0,0,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0.3,0.3,0.7,0.6,1.2,0.7
+		c0.5,0.2,1.1,0.2,1.8,0.2L0.5,9.9l0.3,0.3l7.6-7.6c0,0.7,0.1,1.3,0.3,1.8c0.2,0.5,0.4,0.9,0.7,1.2c0,0,0.1,0.1,0.1,0.1
+		s0.1,0.1,0.1,0.1C9.5,4.9,9.5,4,9.7,3.1c0.1-0.9,0.4-1.8,0.8-2.7C9.5,0.7,8.6,1,7.7,1.1"
+                  />
+                </g>
+              </svg>
+            </div>
+            <img src="/images/colloque.png" alt="colloque" />
+          </div>
+          <div class="grid-projects__item--txt">
+            <h1 class="grid-projects__item--txt--title fs-grid-h1 ff-primary">
+              COLLOQUE 2015/16 <br />
+              THÉMATIQUE
+            </h1>
+            <p class="grid-projects__item--txt--body fs-body ff-secondary">
+              Lille Métropole <br />
+              2015
+            </p>
+          </div>
+        </div>
+
+        <!-- GRID ITEM #4 -->
+        <div class="grid-projects__item grid">
+          <div class="grid-projects__item--img">
+            <div id="btnOverlay4" class="grid-projects__item--img--bg">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 10.8 10.8"
+                style="enable-background: new 0 0 10.8 10.8"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #ffffff;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M7.7,1.1C6.8,1.2,5.9,1.3,4.9,1.2c0,0,0,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0.3,0.3,0.7,0.6,1.2,0.7
+		c0.5,0.2,1.1,0.2,1.8,0.2L0.5,9.9l0.3,0.3l7.6-7.6c0,0.7,0.1,1.3,0.3,1.8c0.2,0.5,0.4,0.9,0.7,1.2c0,0,0.1,0.1,0.1,0.1
+		s0.1,0.1,0.1,0.1C9.5,4.9,9.5,4,9.7,3.1c0.1-0.9,0.4-1.8,0.8-2.7C9.5,0.7,8.6,1,7.7,1.1"
+                  />
+                </g>
+              </svg>
+            </div>
+            <img src="/images/brigade.png" alt="colloque" />
+          </div>
+          <div class="grid-projects__item--txt">
+            <h1 class="grid-projects__item--txt--title fs-grid-h1 ff-primary">
+              BRIGADE DU NORD
+            </h1>
+            <p class="grid-projects__item--txt--body fs-body ff-secondary">
+              Lille Métropole <br />
+              2015
+            </p>
+          </div>
+        </div>
+
+        <!-- GRID ITEM #5 -->
+        <div class="grid-projects__item grid">
+          <div class="grid-projects__item--img blue">
+            <div id="btnOverlay5" class="grid-projects__item--img--bg">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 10.8 10.8"
+                style="enable-background: new 0 0 10.8 10.8"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #ffffff;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M7.7,1.1C6.8,1.2,5.9,1.3,4.9,1.2c0,0,0,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0.3,0.3,0.7,0.6,1.2,0.7
+		c0.5,0.2,1.1,0.2,1.8,0.2L0.5,9.9l0.3,0.3l7.6-7.6c0,0.7,0.1,1.3,0.3,1.8c0.2,0.5,0.4,0.9,0.7,1.2c0,0,0.1,0.1,0.1,0.1
+		s0.1,0.1,0.1,0.1C9.5,4.9,9.5,4,9.7,3.1c0.1-0.9,0.4-1.8,0.8-2.7C9.5,0.7,8.6,1,7.7,1.1"
+                  />
+                </g>
+              </svg>
+            </div>
+            <img class="blue" src="/images/dc-1.png" alt="concours d+c 1" />
+          </div>
+          <div class="grid-projects__item--txt">
+            <h1
+              class="grid-projects__item--txt--title fs-grid-h1 ff-primary blue"
+            >
+              CONCOURS D+C <br />
+              ÉDITION 2016/17
+            </h1>
+            <p class="grid-projects__item--txt--body fs-body ff-secondary blue">
+              Lille Metropole <br />
+              2016
+            </p>
+          </div>
+        </div>
+
+        <!-- GRID ITEM #6 -->
+        <div class="grid-projects__item grid">
+          <div class="grid-projects__item--img">
+            <div id="btnOverlay6" class="grid-projects__item--img--bg">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 10.8 10.8"
+                style="enable-background: new 0 0 10.8 10.8"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #ffffff;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M7.7,1.1C6.8,1.2,5.9,1.3,4.9,1.2c0,0,0,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0.3,0.3,0.7,0.6,1.2,0.7
+		c0.5,0.2,1.1,0.2,1.8,0.2L0.5,9.9l0.3,0.3l7.6-7.6c0,0.7,0.1,1.3,0.3,1.8c0.2,0.5,0.4,0.9,0.7,1.2c0,0,0.1,0.1,0.1,0.1
+		s0.1,0.1,0.1,0.1C9.5,4.9,9.5,4,9.7,3.1c0.1-0.9,0.4-1.8,0.8-2.7C9.5,0.7,8.6,1,7.7,1.1"
+                  />
+                </g>
+              </svg>
+            </div>
+            <img src="/images/hand.png" alt="urban farm" />
+          </div>
+          <div class="grid-projects__item--txt">
+            <h1 class="grid-projects__item--txt--title fs-grid-h1 ff-primary">
+              FARM FOR CHANGE
+            </h1>
+            <p class="grid-projects__item--txt--body fs-body ff-secondary">
+              Lille, Gare Saint Sauveur <br />
+              2015
+            </p>
+          </div>
+        </div>
+
+        <!-- GRID ITEM #7 -->
+        <div class="grid-projects__item grid">
+          <div class="grid-projects__item--img blue">
+            <div id="btnOverlay7" class="grid-projects__item--img--bg">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 10.8 10.8"
+                style="enable-background: new 0 0 10.8 10.8"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #ffffff;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M7.7,1.1C6.8,1.2,5.9,1.3,4.9,1.2c0,0,0,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0.3,0.3,0.7,0.6,1.2,0.7
+		c0.5,0.2,1.1,0.2,1.8,0.2L0.5,9.9l0.3,0.3l7.6-7.6c0,0.7,0.1,1.3,0.3,1.8c0.2,0.5,0.4,0.9,0.7,1.2c0,0,0.1,0.1,0.1,0.1
+		s0.1,0.1,0.1,0.1C9.5,4.9,9.5,4,9.7,3.1c0.1-0.9,0.4-1.8,0.8-2.7C9.5,0.7,8.6,1,7.7,1.1"
+                  />
+                </g>
+              </svg>
+            </div>
+            <img class="blue" src="/images/dc-2.png" alt="concours d+c 1" />
+          </div>
+          <div class="grid-projects__item--txt">
+            <h1
+              class="grid-projects__item--txt--title fs-grid-h1 ff-primary blue"
+            >
+              CONCOURS D+C <br />
+              ÉDITION 2013/14
+            </h1>
+            <p class="grid-projects__item--txt--body fs-body ff-secondary blue">
+              Lille Metropole <br />
+              2014
+            </p>
+          </div>
+        </div>
+
+        <!-- GRID ITEM #8 -->
+        <div class="grid-projects__item grid">
+          <div class="grid-projects__item--img">
+            <div id="btnOverlay8" class="grid-projects__item--img--bg">
+              <svg
+                version="1.1"
+                id="Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                viewBox="0 0 10.8 10.8"
+                style="enable-background: new 0 0 10.8 10.8"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: #ffffff;
+                  }
+                </style>
+                <g>
+                  <path
+                    class="st0"
+                    d="M7.7,1.1C6.8,1.2,5.9,1.3,4.9,1.2c0,0,0,0.1,0.1,0.1c0,0,0.1,0.1,0.1,0.1c0.3,0.3,0.7,0.6,1.2,0.7
+		c0.5,0.2,1.1,0.2,1.8,0.2L0.5,9.9l0.3,0.3l7.6-7.6c0,0.7,0.1,1.3,0.3,1.8c0.2,0.5,0.4,0.9,0.7,1.2c0,0,0.1,0.1,0.1,0.1
+		s0.1,0.1,0.1,0.1C9.5,4.9,9.5,4,9.7,3.1c0.1-0.9,0.4-1.8,0.8-2.7C9.5,0.7,8.6,1,7.7,1.1"
+                  />
+                </g>
+              </svg>
+            </div>
+            <img src="/images/dc-1.png" alt="brigade du nord" />
+          </div>
+          <div class="grid-projects__item--txt">
+            <h1 class="grid-projects__item--txt--title fs-grid-h1 ff-primary">
+              BRIGADE DU NORD
+            </h1>
+            <p class="grid-projects__item--txt--body fs-body ff-secondary">
+              REPHAD les Bateliers, Lille <br />
+              2016-2017
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer flex jc-sb ff-secondary">
+        <small
+          >© Design for Change <br class="footer__br" />
+          2022</small
+        >
+        <small
+          >Mentions <br class="footer__br" />
+          légales</small
+        >
+        <small>Crédits</small>
+      </footer>
+
+      <!-- OVERLAY TEMPLATE #1 -->
+      <div class="overlay overlay-1">
+        <div class="overlay__header">
+          <button class="overlay__header--btn btn-close-overlay">
+            <img src="/images/btn-close.svg" alt="close button" />
+          </button>
+        </div>
+        <div class="overlay-wrapper">
+          <div class="overlay__txt">
+            <h1 class="overlay__txt--title blue">
+              / CONCOURS <br />
+              INTERNATIONAL <br />D+C
+            </h1>
+          </div>
+          <hr class="header__rule rule" />
+          <div class="overlay__intro txt-start">
+            <p class="overlay__intro--txt ff-primary">
+              Le concours international
+              <span class="strong">Design for Change</span> invite les étudiants
+              d’écoles de design, d’architecture et de paysage à réfléchir au
+              renouveau de quartiers et à imaginer des solutions innovantes pour
+              améliorer la qualité de vie des habitants. Plus qu’un concours,
+              c’est une méthodologie, une vision consistant à faire émerger des
+              idées innovantes et de nouvelles pratiques au sein d’un
+              territoire.
+            </p>
+          </div>
+          <div class="overlay__swiper swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="/images/world-map.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/dc-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/dc-2.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/world-map.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/dc-1.png" alt="" />
+              </div>
+              <div class="swiper-slide">
+                <img src="/images/dc-2.png" alt="" />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="overlay__txt--body">
+            <p class="fs-body ff-secondary">
+              Ainsi, à partir des projets issus du concours lille—design et
+              Design for Change, en partenariat avec lille3000, investissent
+              Saint-Sauveur en transformant l’ancienne friche ferroviaire en
+              ferme urbaine expérimentale. Le site de St Sauveur est porteur de
+              végétaux exotiques liés au voyage qui, par leur présence,
+              enrichissent la biodiversité locale des graines disséminées à
+              travers les voies ferrées. Le projet proposé par les étudiants
+              paysagistes de l’école de Versailles porte sur la protection du
+              patrimoine végétal lillois, voué à disparaître au gré de
+              l’évolution du chantier. Ainsi, la ferme “hors sol», mobile,
+              réintègrera les variété spontanées du site, et tel un manifeste
+              s’attachera à développer un programme de sensibilisation des
+              habitants à la provenance des ressources végétales qui finissent
+              dans leurs assiettes : comment encourager tout un chacun à
+              cultiver ce que la nature nous livre naturellement, apprendre à
+              reproduire les graines non-hybrides, à consommer les plantes
+              oubliées, les herbes comestibles spontanées.
+            </p>
+            <h2>Écoles participantes</h2>
+            <p class="fs-body ff-secondary">
+              ESADSE de Saint-Etienne (Fr) ESA du Nord Pas de Calais, Tourcoing,
+              Dunkerque, (Fr) ENSAV La Cambre, Bruxelles, (Be), HEAD, de Genève,
+              (Ch) Politechnico di Milano, Milan, (It) Istanbul Technical
+              University, (Tr) ALBA de Beyrouth, (Lb), Chiba University, Tokyo,
+              (Jp), Polytechnic University School of Design, (HK), Cape
+              Peninsula University of technology, Cape Town, (Za), Industrial
+              Design and Technology Department, University of Botswana, (Bw)
+              Harvard School of Design, Boston, (US), Parsons, New School of
+              Design, New York, (US), MICA de Baltimore, (US), School of design,
+              Jian- gnan University, Wuxy, (Cn), Fabrica, Venise, (It),
+              Saint-Luc, Tournai, (Be), Industrial Design Center, Howest -
+              U-Gent, Courtrai (Be), ENSCI-les Ateliers, Paris (Fr), ESAD,
+              Valenciennes (Fr), UTC Design industriel, Compiègne (Fr), ENSAPL,
+              Lille, (Fr), ESAAT Roubaix, (Fr)
+            </p>
+            <div class="overlay__pdf">
+              <div class="overlay__pdf--link">
+                <h1 class="blue pt-sm">Édition 2015/16&nbsp;</h1>
+                <a href="#" class="hero__intro--txt--link blue">
+                  <img src="/images/blue-arrow-single.png" />
+                </a>
+              </div>
+              <div class="overlay__pdf--link">
+                <h1 class="blue pt-sm">Édition 2015/16&nbsp;</h1>
+                <a href="#" class="hero__intro--txt--link blue">
+                  <img src="/images/blue-arrow-single.png" />
+                </a>
+              </div>
+              <div class="overlay__pdf--link">
+                <h1 class="blue pt-sm">Édition 2015/16&nbsp;</h1>
+                <a href="#" class="hero__intro--txt--link blue">
+                  <img src="/images/blue-arrow-single.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OVERLAY TEMPLATE #2 -->
+      <div class="overlay overlay-2">
+        <div class="overlay__header">
+          <button class="overlay__header--btn btn-close-overlay">
+            <img src="/images/btn-close.svg" alt="close button" />
+          </button>
+        </div>
+        <div class="overlay-wrapper">
+          <div class="overlay__txt">
+            <h1 class="overlay__txt--title">FARM FOR CHANGE</h1>
+            <p
+              class="grid-projects__item--txt--body fs-body ff-secondary txt-center"
+            >
+              Lille, Gare Saint Sauveur <br />
+              2015
+            </p>
+          </div>
+          <hr class="header__rule rule" />
+          <div class="overlay__intro txt-start">
+            <p class="overlay__intro--txt ff-primary">
+              Cultiver la biodiversité à Lille grâce aux apports spécifiques de
+              la friche Saint Sauveur. Depuis 2012, lille—design invite les
+              étudiants du concours
+              <span class="strong">Design for Change</span> / Lille a imaginé
+              des solutions innovantes pour améliorer le cadre de vie des
+              citoyens au sein de la métropole lilloise.
+            </p>
+          </div>
+          <div class="overlay__swiper swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  src="/images/farm for change/farm-for-change-1.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/images/farm for change/farm-for-change-2.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/images/farm for change/farm-for-change-3.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/images/farm for change/farm-for-change-4.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/images/farm for change/farm-for-change-5.png"
+                  alt=""
+                />
+              </div>
+              <div class="swiper-slide">
+                <img
+                  src="/images/farm for change/farm-for-change-6.png"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
+          <div class="overlay__txt--body">
+            <p class="fs-body ff-secondary">
+              Ainsi, à partir des projets issus du concours lille—design et
+              Design for Change, en partenariat avec lille3000, investissent
+              Saint-Sauveur en transformant l’ancienne friche ferroviaire en
+              ferme urbaine expérimentale. Le site de St Sauveur est porteur de
+              végétaux exotiques liés au voyage qui, par leur présence,
+              enrichissent la biodiversité locale des graines disséminées à
+              travers les voies ferrées. <br />
+              <br />
+            </p>
+            <p class="fs-body ff-secondary">
+              Le projet proposé par les étudiants paysagistes de l’école de
+              Versailles porte sur la protection du patrimoine végétal lillois,
+              voué à disparaître au gré de l’évolution du chantier. Ainsi, la
+              ferme “hors sol», mobile, réintègrera les variété spontanées du
+              site, et tel un manifeste s’attachera à développer un programme de
+              sensibilisation des habitants à la provenance des ressources
+              végétales qui finissent dans leurs assiettes : comment encourager
+              tout un chacun à cultiver ce que la nature nous livre
+              naturellement, apprendre à reproduire les graines non-hybrides, à
+              consommer les plantes oubliées, les herbes comestibles spontanées.
+              <br />
+              <br />
+            </p>
+            <p class="fs-body ff-secondary">
+              La ferme de St Sauveur sera aussi un lieu “laboratoire” où
+              s’expérimentent de nouvelles formes de cultures (verticales,
+              permaculture, récupération et redistribution des eaux de pluie...
+              Les designers s’inspirent de ce que la nature produit et imaginent
+              de nouveaux matériaux à partir des champignons, du miel des
+              abeilles... L’ortie, au-delà de ses vertus curatives et gustatives
+              est aussi une formidable ressource textile. Le champ des possibles
+              est sans limites.
+              <br />
+              <br />
+            </p>
+            <p class="fs-body ff-secondary">
+              Il s’agira bien d’une véritable Renaissance pour répondre au thème
+              proposé cette année par lille—3000, où l’expérimentation
+              collective - qui associe ici étudiants, makers, associations
+              professionnels, habitants, créateurs et chercheurs - ouvre la voie
+              à de nouvelles pratiques, celles de repenser la métropole de
+              demain.
+              <br />
+            </p>
+            <div class="overlay__pdf">
+              <div class="overlay__pdf--link">
+                <h1>
+                  PDF
+                  <a href="#" class="hero__intro--txt--link blue">
+                    <img src="/images/blue-arrow-single.png" />
+                  </a>
+                  <br />
+                  “FARM FOR CHANGE, <br />
+                  RENAISSANCE D’UN TERRITOIRE”
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="/src/js/app.js"></script>
+  </body>
+</html>

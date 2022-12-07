@@ -3,28 +3,40 @@
 @use "../utils/functions" as *;
 
 .header {
-  display: inline-block;
-  width: 100%;
-  padding: clamp(15px, 2.5vw, 40px) clamp(20px, 3vw, 50px)
-    clamp(20px, 3vw, 50px);
   position: fixed;
-  top: 0;
-  left: 0;
+  padding-bottom: 20px;
+  width: 100%;
+  // max-width: 1260px;
   background: white;
+  padding: clamp(20px, 2.5vw, 40px) 15px 0;
+  top: 0;
   z-index: 10000;
 
-  @include breakpoint(medium) {
-    padding: 40px 110px;
-  }
-
-  @include breakpoint(xlarge) {
-    padding: 40px 250px;
+  @include breakpoint(large) {
+    max-width: 1700px;
+    padding: clamp(20px, 2.5vw, 40px) clamp(15px, 7.5vw, 200px) 0;
   }
 
   &.open {
+    background: black;
+    height: 100%;
+
+    @include breakpoint(small) {
+      height: clamp(480px, 60vw, 600px);
+    }
+
+    // @include breakpoint(medium) {
+    //   height: 70%;
+    // }
+
+    // @include breakpoint(medium) {
+    //   height: 75%;
+    // }
+
     .header__menu {
       > span:first-child {
         transform: rotate(45deg);
+        background: white;
       }
 
       > span:nth-child(2) {
@@ -33,21 +45,130 @@
 
       > span:last-child {
         transform: rotate(-45deg);
+        background: white;
       }
     }
   }
 
-  &__logo {
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+
+    &--left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      .current-page {
+        font-weight: 400;
+        margin-top: 2px;
+        font-size: clamp(25px, 2.5vw, 38px);
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  &__rule {
+    width: 100%;
+    height: 0.1rem;
+    margin-top: 21px;
+    background: black;
+    outline: none;
+    border: none;
+
+    &.open {
+      background: white;
+    }
+  }
+
+  &__subnav {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    left: 12px;
+    right: 12px;
+    max-width: 1260px;
+    visibility: hidden;
+    margin-top: 20px;
+
+    &.visible {
+      visibility: visible;
+    }
+
+    @include breakpoint(small) {
+      width: 95%;
+      grid-template-columns: repeat(4, 1fr);
+      padding: 0 20px;
+    }
+
+    @include breakpoint(large) {
+      max-width: 1700px;
+      width: 86%;
+      margin: 0 auto;
+      padding: 20px 100px 20px;
+      margin-top: 20px;
+    }
+
+    &--item {
+      padding: 20px 10px;
+
+      @include breakpoint(small) {
+        padding: 30px 0;
+      }
+    }
+
+    &--img {
+      margin: 0 auto;
+      width: clamp(90px, 14vw, 140px);
+      margin-top: clamp(10px, 1vw, 20px);
+    }
+
+    &--link {
+      padding-bottom: 10px;
+    }
+
+    &--sublink {
+      font-size: 18px;
+      margin-left: 15px;
+
+      @include breakpoint(small) {
+        font-size: 20px;
+        line-height: 1.3;
+      }
+      > span {
+        text-transform: uppercase;
+      }
+    }
+
+    .subnav-dc {
+      @include breakpoint(small) {
+        text-align: center;
+      }
+    }
+    .subnav-dc-title {
+      margin-top: 3px;
+      font-size: 20px;
+      font-weight: $fw-semibold;
+
+      @include breakpoint(medium) {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+    }
+  }
+
+  &__logo svg {
     cursor: pointer;
-    width: clamp(100px, 7vw, 150px);
+    width: clamp(60px, 7vw, 90px);
   }
 
   &__menu {
-    > span {
+    .hamburger {
       display: block;
       width: clamp(35px, 4vw, 50px);
       height: 2px;
-      background-color: black;
+      background: black;
       transition: all 300ms ease-in-out;
       transform-origin: 8px 1px;
       cursor: pointer;
@@ -57,6 +178,10 @@
       }
 
       @include breakpoint(medium) {
+        transform-origin: 8px 1px;
+      }
+
+      @include breakpoint(large) {
         transform-origin: 12px 1px;
       }
 
@@ -65,13 +190,48 @@
       }
     }
   }
+}
 
-  &__current-page {
-    &--name {
-      margin-left: 10px;
-      font-weight: 400;
-      font-size: clamp(20px, 2.5vw, 32px);
-      text-transform: uppercase;
+.subnav__footer {
+  grid-column: 1/3;
+  text-align: center;
+  border-top: 0.1rem solid white;
+  margin-top: 20px;
+  padding-top: 40px;
+
+  @include breakpoint(small) {
+    grid-column: 1/5;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    border-top: 0px;
+    margin-top: clamp(40px, 10vw, 100px);
+    padding: 0 20px;
+  }
+
+  &--br {
+    display: none;
+
+    @include breakpoint(small) {
+      display: block;
+    }
+  }
+
+  &--block {
+    margin-bottom: 20px;
+
+    a {
+      font-size: 18px;
+      line-height: 1.2;
+    }
+  }
+
+  &--link {
+    img {
+      width: 14px;
+      height: auto;
+      margin-left: 5px;
     }
   }
 }

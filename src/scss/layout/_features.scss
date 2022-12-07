@@ -33,53 +33,49 @@
       img {
         margin: 0 auto;
         width: clamp(240px, 30vw, 300px);
+        padding-bottom: 25px;
+
+        @include breakpoint(small) {
+          padding-bottom: 0px;
+        }
       }
 
       .scale-up {
-        @include breakpoint(medium) {
-          transform: scale(1.2);
+        scale: 1;
+
+        @include breakpoint(small) {
+          scale: 1.2;
         }
+      }
+
+      .scale-down {
+        scale: 0.9;
       }
     }
 
     &--txt {
-      .hover-red,
-      .hover-blue,
-      .hover-blk,
-      .hover-green {
-        cursor: pointer;
-        transition: color ease-in-out 0.3s;
+      padding: 0px;
 
-        &.hover-red:hover {
-          color: $clr-red;
-        }
+      @include breakpoint(medium) {
+        padding: 0 50px;
+      }
 
-        &.hover-blue:hover {
-          color: $clr-blue;
-        }
-
-        &.hover-blk:hover {
-          color: black;
-        }
-
-        &.hover-green:hover {
-          color: $clr-green;
-        }
+      a {
+        color: black;
       }
 
       h1,
       h2 {
         font-weight: 400;
-        padding-top: 20px;
       }
 
       h1 {
-        font-size: $fs-h-1;
+        font-size: $fs-h1;
       }
 
       p {
         font-size: $fs-body;
-        font-family: $ff-secondary-font;
+        font-family: $ff-secondary;
         line-height: 1.2;
       }
     }
