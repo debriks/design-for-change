@@ -593,6 +593,10 @@ body {
   grid-template-columns: 65% 35%;
 }
 
+.mt-grid {
+  margin-top: 50px;
+}
+
 .gap-15 {
   gap: 15px;
 }
@@ -768,6 +772,22 @@ body {
 
 .ff-primary {
   font-family: "Libre Baskerville", serif;
+}
+
+.body-vision {
+  background-color: #e6e9fd;
+}
+
+.body-membres {
+  background-color: #dcfbdc;
+}
+
+.body-reseau {
+  background-color: #ffe7e3;
+}
+
+.body-contact {
+  background-color: #e7e7e7;
 }
 
 .grid-team__item {

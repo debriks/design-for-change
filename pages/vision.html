@@ -5,10 +5,252 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="#" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/dist/css/style.css" />
     <title>Design for Change | Notre vision</title>
   </head>
-  <body>
-    <h1 class="fs-h1">VISION</h1>
+  <body class="body-vision">
+    <header class="header body-vision">
+      <nav class="header__nav">
+        <div class="header__nav--left">
+          <a href="/index.html" class="header__logo">
+            <svg
+              version="1.1"
+              id="Layer_1"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              viewBox="0 0 61.5 23.2"
+              style="enable-background: new 0 0 61.5 23.2"
+              xml:space="preserve"
+            >
+              <style>
+                path {
+                  fill: rgb(0, 0, 0);
+                }
+                header.open path {
+                  fill: rgb(255, 255, 255);
+                }
+              </style>
+              <g>
+                <path
+                  class="st0"
+                  d="M0.3,0.9h9.4c5.6,0,9.8,3.5,9.8,10.7c0,6.3-3.2,11-9.8,11H0.3V0.9z M5.1,18.5h4.2c2.7,0,5.4-1.7,5.4-6.5
+  c0-4.3-1.5-7.2-6.3-7.2H5.1V18.5z"
+                />
+                <path
+                  class="st0"
+                  d="M31.4,13.3h6.1v3.2h-6.1v6.1h-3.2v-6.1h-6.1v-3.2h6.1V7.2h3.2V13.3z"
+                />
+                <path
+                  class="st0"
+                  d="M55.4,8.1c-0.3-2.1-2.3-3.8-4.7-3.8c-4.2,0-5.9,3.6-5.9,7.5c0,3.6,1.6,7.3,5.9,7.3c2.9,0,4.5-2,4.9-4.8h4.6
+  c-0.5,5.4-4.2,8.9-9.5,8.9c-6.7,0-10.7-5-10.7-11.3c0-6.5,3.9-11.4,10.7-11.4c4.7,0,8.8,2.8,9.4,7.8C60.2,8.1,55.4,8.1,55.4,8.1z"
+                />
+              </g>
+            </svg>
+          </a>
+          <h1 class="current-page"></h1>
+        </div>
+
+        <button id="btnHamburger" class="header__menu">
+          <span class="hamburger"></span><span class="hamburger"></span
+          ><span class="hamburger"></span>
+        </button>
+      </nav>
+      <hr class="header__rule rule" />
+
+      <nav class="header__subnav white">
+        <!-- SUBNAV EXPERTISE -->
+        <div class="header__subnav--item flex col">
+          <a
+            href="./expertise.html"
+            class="header__subnav--link ff-primary fs-subnav-link txt-center white"
+            >Expertise</a
+          >
+          <a href="./expertise.html" class="header__subnav--img">
+            <img src="/images/ladder-white.png" alt="three-headed ladder" />
+          </a>
+        </div>
+
+        <!-- SUBNAV PROJETS -->
+        <div class="header__subnav--item flex col">
+          <a
+            href="./projets.html"
+            class="header__subnav--link ff-primary fs-subnav-link txt-center white"
+            >Projets</a
+          >
+          <a href="./projets.html" class="header__subnav--img">
+            <img src="/images/hammer_white.png" alt="curved hammer" />
+          </a>
+        </div>
+
+        <!-- SUBNAV RECHERCHE -->
+        <div class="header__subnav--item flex col">
+          <a
+            href="./recherche.html"
+            class="header__subnav--link ff-primary fs-subnav-link txt-center blue-subnav"
+            >Recherche</a
+          >
+          <a href="./recherche.html" class="header__subnav--img">
+            <img
+              src="/images/multiple-hammers-transparent.png"
+              alt="hammer wheel"
+            />
+          </a>
+        </div>
+
+        <!-- SUBNAV EQUIPE -->
+        <div class="header__subnav--item flex col">
+          <a
+            href="./equipe.html"
+            class="header__subnav--link ff-primary fs-subnav-link txt-center white"
+            >équipe</a
+          >
+          <a href="./equipe.html" class="header__subnav--img">
+            <img
+              class="scale-up"
+              src="/images/umbrellas-white.png"
+              alt="three-headed umbrellas"
+            />
+          </a>
+        </div>
+        <!-- SUBNAV FOOTER -->
+        <nav class="subnav__footer">
+          <div class="subnav__footer--block">
+            <a
+              href="./vision.html"
+              class="subnav__footer--link ff-secondary white"
+            >
+              Notre <br class="subnav__footer--br" />vision
+            </a>
+          </div>
+          <div class="subnav__footer--block">
+            <a
+              href="./membres.html"
+              class="subnav__footer--link ff-secondary white"
+            >
+              Nos <br class="subnav__footer--br" />membres
+            </a>
+          </div>
+          <div class="subnav__footer--block">
+            <a
+              href="./reseau.html"
+              class="subnav__footer--link ff-secondary white"
+            >
+              Notre <br class="subnav__footer--br" />réseau
+            </a>
+          </div>
+          <div class="subnav__footer--block">
+            <a
+              href="./contact.html"
+              class="subnav__footer--link ff-secondary white"
+            >
+              Nous <br class="subnav__footer--br" />contacter
+            </a>
+          </div>
+          <div class="subnav__footer--block flex col">
+            <a
+              href="https://www.facebook.com/designforchange/"
+              target="_blank"
+              class="subnav__footer--link ff-secondary white fs-body-sublink"
+            >
+              Facebook
+            </a>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="subnav__footer--link ff-secondary white fs-body-sublink"
+            >
+              Instagram
+            </a>
+          </div>
+        </nav>
+      </nav>
+    </header>
+    <main class="container flex col jc-c ai-c">
+      <section class="hero flex ai-c">
+        <div class="hero__intro txt-center">
+          <img
+            class="hero__intro--img"
+            src="/images/catcher-nb.png"
+            alt="catcher"
+          />
+          <p class="hero__intro--txt ff-primary">
+            Le design est une discipline de création d’objets, d’environnements,
+            aussi bien esthétique, fonctionnelle que destinée à la production
+            industrielle. Au XXI<sup>ème</sup> siècle, il peut être défini comme
+            la discipline de questionnement du monde.
+          </p>
+        </div>
+      </section>
+      <section class="grid-team grid mt-grid">
+        <div class="grid-team__item bt-1">
+          <div class="grid-team__item--body txt-secondary mt-grid">
+            <p class="fs-body ff-secondary">
+              L’association <strong>Design for Change</strong> a été créé en
+              2010 sur la nécessité d’inventer de nouveaux modes d’action
+              susceptibles de répondre aux enjeux de demain. Elle interroge les
+              usages et les comportements qui concerne tous les domaines qui
+              lient l’individu à la société dans laquelle il évolue : la santé,
+              l’énergie, l’alimentation, l’éducation, son rapport à l’espace, au
+              temps, à l’environnement, la cohésion sociale... Au moment des
+              crises multiples dont souffre la planète, le design occupe une
+              place toute particulière. Design for Change s’est donnée comme
+              objectif d’agir pour la transition en confrontant des lieux
+              d’enseignement du design à l’échelle mondiale autour d’un concours
+              (2010-2015). Dès la seconde session, est apparue la nécessité de
+              définir un cadre de référence territoriale de mise en œuvre de
+              projets. Ainsi, une soixantaine d’écoles venues de tous les
+              continents ont été sollicitées et ont remis des propositions
+              examinées trois années de suite par un jury prestigieux,
+              réunissant à chaque fois des designers, des enseignants et
+              d’acteurs économiques engagés dans la transition.
+            </p>
+            <br />
+            <p class="fs-body ff-secondary">
+              En 2015, dans le cadre de l’événement Renaissance porté par
+              lille3000, des projets proposés dans le cadre du concours par
+              cette génération émergente de designers ont été développés. Deux
+              projets peuvent être mis en évidence : Brigade du Nord interroge
+              la notion de service dans un EHPAD, et la ferme urbaine sur la
+              friche Saint Sauveur à Lille porte les enjeux du vivant autour des
+              ressources naturelles et l’inclusion sociale. Ces années
+              d’expérience ont permis de tester un modèle de formation et
+              d’expérimentation par le projet à partir d’enjeux d’intérêt
+              général appliqués à un territoire, mais ils ont également démontré
+              la capacité de ce territoire à mobiliser 500 acteurs autour
+              d’expérimentations de la transition dans le cadre de Lille
+              Métropole 2020, Capitale Mondiale du Design (WDO®). Cependant,
+              paradoxalement, ce territoire manque d’un lieu laboratoire qui
+              puisse poursuivre ces ambitions. Il s’agit donc désormais de
+              franchir une nouvelle étape, en mettant les capacités créatives
+              d’ici et d’ailleurs au service de la réinvention et de la
+              transmission des savoirs et savoir-faire en matière de transition
+              écologique, sociétale, scientifique, technologique et
+              philosophique.
+            </p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer flex jc-sb ff-secondary">
+        <small
+          >© Design for Change <br class="footer__br" />
+          2022</small
+        >
+        <small
+          >Mentions <br class="footer__br" />
+          légales</small
+        >
+        <small>Crédits</small>
+      </footer>
+    </main>
+    <script src="/src/js/app.js"></script>
   </body>
 </html>
