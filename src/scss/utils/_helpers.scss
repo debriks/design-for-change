@@ -3,6 +3,8 @@
 @use "../utils/functions" as *;
 
 // FLEXBOX
+// FLEXBOX
+// FLEXBOX
 
 .flex {
   display: flex;
@@ -20,16 +22,20 @@
   align-items: flex-start;
 }
 
+.col {
+  flex-flow: column nowrap;
+}
+
+// CSS GRID
+// CSS GRID
+// CSS GRID
+
 .grid {
   display: grid;
 }
 
 .grid-l-sm {
   grid-template-columns: 65% 35%;
-}
-
-.col {
-  flex-flow: column nowrap;
 }
 
 .gap-15 {
@@ -48,9 +54,25 @@
   margin-top: 3px;
 }
 
+// LAYOUT
+// LAYOUT
+// LAYOUT
+
+/* Padding */
+
 .pt-med {
   padding-top: 50px;
 }
+
+.p-inline {
+  padding: clamp(15px, 3vw, 40px);
+}
+
+.pt-sm {
+  padding-top: 5px;
+}
+
+/* Borders */
 
 .bt-1 {
   border-top: 0.1rem solid black;
@@ -61,12 +83,28 @@
   border-bottom: 0.1rem black solid;
 }
 
+/* Text */
+
 .txt-center {
   text-align: center;
 }
 
 .txt-start {
   text-align: start;
+}
+
+.ff-primary {
+  font-family: $ff-primary;
+}
+
+.ff-secondary {
+  font-family: $ff-secondary;
+}
+
+.strong {
+  font-family: $ff-secondary;
+  font-weight: $fw-semibold;
+  font-size: clamp(25px, 3vw, 40px);
 }
 
 .fs-h1 {
@@ -94,8 +132,24 @@
   padding-bottom: 10px;
 }
 
-.p-inline {
-  padding: clamp(15px, 3vw, 40px);
+.fs-body {
+  font-size: $fs-body;
+}
+
+.fs-body-sublink {
+  font-size: $fs-body-sublink;
+}
+
+.fs-subnav-link {
+  font-family: $ff-primary;
+  font-weight: $fw-reg;
+  font-size: clamp(22px, 2.7vw, 30px);
+  text-transform: uppercase;
+}
+
+.fs-sm-resp {
+  font-size: clamp(13px, 2.5vw, 32px);
+  line-height: 1.1;
 }
 
 // Expertise Grid Block Padding
@@ -105,19 +159,9 @@
   width: clamp(250px, 30vw, 300px);
 }
 
-.strong {
-  font-size: clamp(24px, 3.4vw, 46px);
-  font-family: $ff-secondary;
-  font-weight: 600;
-}
-
-.ff-primary {
-  font-family: $ff-primary;
-}
-
-.ff-secondary {
-  font-family: $ff-secondary;
-}
+// COLORS
+// COLORS
+// COLORS
 
 .white {
   color: white;
@@ -147,34 +191,8 @@
   margin-top: -140px;
 }
 
-.fs-sm-resp {
-  font-size: clamp(13px, 2.5vw, 32px);
-  line-height: 1.1;
-}
-
-.mt-grid {
-  margin-top: 100px;
-}
-
-.fs-body {
-  font-size: $fs-body;
-}
-
-.fs-body-sublink {
-  font-size: $fs-body-sublink;
-}
-
-.fs-subnav-link {
-  font-family: $ff-primary;
-  font-weight: $fw-reg;
-  font-size: clamp(22px, 2.7vw, 30px);
+.uppercase {
   text-transform: uppercase;
-}
-
-.strong {
-  font-family: $ff-secondary;
-  font-weight: $fw-semibold;
-  font-size: clamp(25px, 3vw, 40px);
 }
 
 .scale-up {
@@ -208,8 +226,4 @@
 
 .ff-primary {
   font-family: $ff-primary;
-}
-
-.pt-sm {
-  padding-top: 5px;
 }

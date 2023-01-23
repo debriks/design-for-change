@@ -31,6 +31,7 @@ const btnOverlay5 = document.getElementById("btnOverlay5");
 const btnOverlay6 = document.getElementById("btnOverlay6");
 const btnOverlay7 = document.getElementById("btnOverlay7");
 const btnOverlay8 = document.getElementById("btnOverlay8");
+const btnOverlay9 = document.getElementById("btnOverlay9");
 
 const btnOverlayClose = document.querySelectorAll(".btn-close-overlay");
 
@@ -46,26 +47,37 @@ btnOverlay2.addEventListener("click", function () {
 
 btnOverlay3.addEventListener("click", function () {
   overlay1.classList.add("visible");
+  window.scrollTo(0, 0);
 });
 
 btnOverlay4.addEventListener("click", function () {
   overlay2.classList.add("visible");
+  window.scrollTo(0, 0);
 });
 
 btnOverlay5.addEventListener("click", function () {
   overlay1.classList.add("visible");
+  window.scrollTo(0, 0);
 });
 
 btnOverlay6.addEventListener("click", function () {
   overlay2.classList.add("visible");
+  window.scrollTo(0, 0);
 });
 
 btnOverlay7.addEventListener("click", function () {
   overlay1.classList.add("visible");
+  window.scrollTo(0, 0);
 });
 
 btnOverlay8.addEventListener("click", function () {
   overlay2.classList.add("visible");
+  window.scrollTo(0, 0);
+});
+
+btnOverlay9.addEventListener("click", function () {
+  overlay1.classList.add("visible");
+  window.scrollTo(0, 0);
 });
 
 btnOverlayClose.forEach((button) => {
